@@ -1,0 +1,55 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { /* max-width: 1920px; */ line-height: 1.5; margin-left: auto; margin-right: auto; 
+min-height: 100vh; text-rendering: optimizeSpeed }  
+img { width: 100%; height: auto; display: block }
+input, button, textarea, select { font: inherit }
+
+/* ================= ENDS ================ */
+
+/* Desktops */
+@media (min-width: 768px) { body { padding: 4% 20%; line-height: 1.6; } }
+	
+/* Mobiles */
+@media (max-width: 767px) { body { padding: 12% 8%; line-height: 1.2; } }
+
+body { 
+    text-align: center;
+    font-family: sans-serif;
+    border-top: solid 20px #00BFA6;
+    border-bottom: solid 20px #00BFA6;
+    background: rgb(250, 250, 250);
+}
+
+h1 {
+    color: #00BFA6;
+    font-size: calc(48px + (84 - 48) * ((100vw - 320px) / (1600 - 320)));
+    font-weight: normal;
+    letter-spacing: -2px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: calc(32px + (38 - 32) * ((100vw - 320px) / (1600 - 320)));
+    letter-spacing: 6px;
+    margin-bottom: 48px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: calc(24px + (32 - 24) * ((100vw - 320px) / (1600 - 320)));
+    margin-top: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 16px 0;
+    font-size: calc(16px + (21 - 16) * ((100vw - 320px) / (1600 - 320)));
+}
+
