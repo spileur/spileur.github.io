@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus: Sample 1</title>
+    <meta name="description" content="Sample web page with desktop and mobile menu.">
+
+	<!-- Preload hero image -->
+    <link rel="preload" href="assets/img/analytics.png" as="image">
+
+	<!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/lunadoge.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"> 
+
+	<!-- Font Awesome 5 icons -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+
+	<nav class="container-menu menu-desktop">
+		<a href="#"><img src="assets/img/website-logo.png" alt="website logo"></a>
+		<ul>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#benefits">Benefits</a></li>
+			<li><a href="#customers">Customers</a></li>            
+			<li><a href="#" id="btn-cta"><span>Sign up</span><i class="fas fa-arrow-right"></i></a></li>
+		</ul>
+		<div class="item-icon">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+	</nav>
+
+
+    <header class="hero-block hero-half half-img-right text-center-mobile">
+
+        <div class="col-2">
+            <div class="hero-text-container">
+                <h1>Putting the tricks into <span>web analytics</span></h1>
+                <h2>Snazzy Analytics helps you boost your business impact. Supports all modern JavaScript frameworks, including React, Vue, and Svelte.</h2>
+            </div>
+            <div class="container-btn">
+                <a href="#" class="btn btn-primary btn-rounded"><span>Try it for free</span><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            
+        </div>
+    
+        <div class="col-2">
+            <div class="hero-bg-media">
+                <img src="assets/img/analytics.png" alt="Sample image">
+            </div>
+        </div>
+    </header>
+
+    <section class="theme-one text-center">
+        <p class="standfirst">Snazzy Analytics has been featured on <a href="#">Fast Company</a>, <a href="#">Product Hunt</a> and <a href="#">HackerNews</a> for being a simple and easy-to-use alternative to Google Analytics.</p>   
+    </section>
+
+    
+	<section class="container-flex col-shadows corners-soft theme-two" id="features">
+		<div class="col-1 text-center">
+			<h2>What we offer</h2>
+			<h3>Say 'Hello' to a simple yet powerful user analytics system. Snazzy Analytics tells you all you need to know about your website traffic, without tracking or storing your visitors' personal information. </h3>
+		</div>
+
+		<div class="col-3 text-center">
+			<figure><img src="assets/img/charts.png" alt="Charts"></figure>
+			<h3>One screen</h3>
+			<p>All your analytics essentials at-a-glance on one single, clutter-free screen: top pages, page views, referrers, browser screen sizes and more.</p>
+		</div>
+
+		<div class="col-3 text-center">
+			<figure><img src="assets/img/mobile.png" alt="Mobile"></figure>
+			<h3>Cookie-less</h3>
+			<p>You won't need to distract your website visitors with pesky messages about cookie tracking. And Snazzy Analytics is fully GDPR compliant too.</p>
+		</div>
+
+		<div class="col-3 text-center">
+			<figure><img src="assets/img/forms.png" alt="Data"></figure>
+            <h3>Quick set-up</h3>
+            <p>Just add two lines of JavaScript to your web pages - and you're done! React, Angular, Vue, Svelte and other modern front-end frameworks fully supported.</p>
+		</div>
+	</section>
+
+    <section class="theme-one text-center">
+        <img src="assets/img/dashboard.png" alt="dashboard">
+    </section>
+    
+	<section class="container-flex col-shadows corners-soft theme-two" id="benefits">
+		<div class="col-1 text-center">
+			<h2>How you benefit</h2>
+			<h3>Snazzy Analytics helps you focus on what's important: your business.</h3>
+		</div>
+
+		<div class="col-3 text-center">
+			<figure><img src="assets/img/trends.png" alt="Trends"></figure>
+			<h3>Measure content performance</h3>
+			<p>Discover what's popular on your website, and what needs to improve. All from one, easy-to-navigate, blazingly-fast dashboard screen.</p>
+		</div>
+
+		<div class="col-3 text-center">
+			<figure><img src="assets/img/project.png" alt="Project"></figure>
+			<h3>Grow your business</h3>
+			<p>Get actionable insights with real-time and historical data to guide evidence-based decision-making and content optimisation across your entire website.</p>
+		</div>
+
+		<div class="col-3 text-center">
+			<figure><img src="assets/img/data.png" alt="Data"></figure>
+            <h3>Be future-ready</h3>
+            <p>Our auto-scaling web servers handle billions of page views. So you don't need to worry about sudden traffic spikes impacting your website's performance.</p>
+		</div>
+	</section>    
+       
+    
+    <section class="container-flex col-shadows corners-soft theme-two img-circle" id="customers">
+		<div class="col-1 text-center">
+			<h2>Happy users</h2>
+			<h3>Join the 1,000s of delighted customers from every sector of business around the world who are using Snazzy Analytics to drive their future success. </h3>
+		</div>
+
+		<div class="col-3 text-center">
+			<figure><img src="assets/img/face-2.png" alt="Happy customer"></figure>
+			<p><i>"Excellent service"</i></p>
+            <p><b>Joe Bloggs</b></p>
+		</div>
+
+		<div class="col-3 text-center">
+			<figure><img src="assets/img/face-1.png" alt="Happy customer"></figure>
+			<p><i>"Best SAAS platform"</i></p>
+            <p><b>Mary Smith</b></p>
+		</div>
+
+		<div class="col-3 text-center">
+			<figure><img src="assets/img/face-3.png" alt="Happy customer"></figure>
+			<p><i>"Simple and affordable"</i></p>
+            <p><b>Simon Murphy</b></p>
+		</div>
+	</section>    
+           
+
+    <script src="assets/js/menu.js"></script>
+   
+</body>
+</html>
