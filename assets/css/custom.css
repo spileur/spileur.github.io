@@ -161,6 +161,14 @@ header.hero-block a.btn-secondary:visited { background-color: var(--gray-100) }
 .theme-one a.btn-primary:link { color: var(--white-000) }
 .theme-one a.btn-primary:visited { color: var(--white-000) }
 .theme-one { background-color: var(--teal-200) }
-.theme-one .col-3 h3 { color: var(--teal-600) }
+.theme-one .col-1 h4 { color: var(--gray-600) }
 .theme-one .col-3 p { color: var(--gray-800) }
 .theme-one .col-3 li { color: var(--gray-800) }
+
+footer h3 { color: var(--teal-500) }
+footer ul.footer-links li a:focus, 
+footer ul.footer-links li a:hover, 
+footer ul.footer-links li a:active 
+footer ul.footer-icons li a:focus, 
+footer ul.footer-icons li a:hover, 
+footer ul.footer-icons li a:active{ color: var(--teal-300); text-decoration-color: var(--teal-300); background: none; }

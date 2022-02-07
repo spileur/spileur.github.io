@@ -2,42 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentin Uhlrich | Independent Web and Digital Developer</title>
-    <meta name="author" content="Valentin Uhlrich">   
-    <meta name="description" content="Freelance Web and Digital Developer crafting innovative online experiences on the web and social media.">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">    
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img//favicon-16x16.png">    
-    <link rel="manifest" href="assets/img/site.webmanifest">
-    <link rel="stylesheet" href="assets/css/global.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@700&display=swap" rel="stylesheet"> 
+    <title>Sample Web Page Title</title>
+    <meta name="description" content="Sample web page description goes here.">
+
+	<!-- Preload hero image -->
+
+
+	<!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/lunadoge.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet"> 
+
+    
+	<!-- Font Awesome 5 icons -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+    <!-- Light Awesome icons -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Google Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet">
+
 </head>
+
 
 <body>
 
-    <h1>Hi, I'm Valentin Uhlrich</h1>
-    <h2>Web and Digital Developer</h2>
+    <!-- navigation menu -->
+    <nav></nav>
 
-    <img src="assets/img/programming-undraw.svg" alt="Designer Random Draw">
+    <!-- header hero block -->
+    <header class="hero-block hero-half half-img-right text-center-mobile">
+        <div class="col-2">
+            <div class="hero-text-container">
+                <h1>Valentin Uhlrich</h1>
+                <h2>Web and Digital Developer</h2>
+            </div>
+        
+        
+            <div class="container-btn">
+                <a href="../portfolio/index.html" class="btn btn-secondary"><i class="fas fa-portrait"></i> Portfolio</a>   
+                <a href="../contact/index.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="hero-bg-media">
+                <img src="assets/img/programming-undraw.svg" sample background image">
+            </div>
+        </div>
+    </header>
+    
+    
 
-    <p>I created this website to showcases some of my recent web webpages.</p>
 
-    <h3>Sample Web Pages</h3>
-    <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
-    <p><a href="exercises/page-2.html">IBAT Chocolates</a></p>
-    <p><a href="exercises/page-3.html">Prince & Purple Rain</a></p>
-    <p><a href="exercises/page-4.html">Lorem Ipsum Text</a></p>
-    <p><a href="exercises/page-5.html">Vincent van Gogh</a></p> 
-    <p><a href="exercises/page-6.html">Irish Tourism</a></p> 
-    <p><a href="exercises/page-7.html">Smoothies</a></p> 
-    <p><a href="exercises/page-8.html">Software Analytics</a></p>
-    <p><a href="exercises/page-9.html">The Box Model</a></p>
-    <p><a href="exercises/page-10.html">Web Page With Panels</a></p>
-    <p><a href="exercises/hero-text.html">Hero block with animated text</a></p>
-    <p><a href="exercises/hero-image.html">Hero block with background image</a></p>
-    <p><a href="exercises/hero-video.html">Hero block with background video</a></p> 
- 
+    <!-- main content with sections -->
+    <main>
+        <section class="container-flex theme-one">
+            <div class="col-1 text-center">
+                <h2>Recent Projects</h2>
+                <h3>Below you can see some examples of my recent work.</h3>
+            </div>
+
+            <div class="col-3">
+                <figure><img src="assets/img/project-van-gogh.png" alt="Vincent Van Gogh image"></figure>
+                <h3>Vincent Van Gogh</h3>
+                <p>A summary of the life and work of Dutch artist Vincent van Gogh with an embeded video from YouTube.</p>
+                <a href="../portfolio/van-gogh/index.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> View my project</a>
+            </div>
+
+            <div class="col-3">
+                <figure><img src="assets/img/project-smoothie.jpg" alt="Smooth Smoothies image"></figure>
+                <h3>Smooth Smoothies</h3>
+                <p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p>
+                <a href="../portfolio/smoothies/index.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> View my project</a>
+            </div>
+
+            <div class="col-3">
+                <figure><img src="assets/img/project-fashion.jpg" alt="Snazzy Fashion image"></figure>
+                <h3>Snazzy Fashion</h3>
+                <p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
+                <a href="../portfolio/fashion/index.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> View my project</a>
+            </div>
+        </section>
+    </main>
+
+    
+    <!-- footer -->
+    
+	<footer>
+
+		<h2>Valentin Uhlrich, Web Developer</h2>
+
+		<h3>Excellence in digital creation</h3>
+
+		<ul class="footer-links">
+			<li><a href="/">Home</a></li>
+			<li><a href="../portfolio/index.html">Portfolio</a></li>
+			<li><a href="../contact/index.html">Contact</a></li>
+		</ul>
+
+		<ul class="footer-icons">
+			<li><a href="https://www.linkedin.com/in/valentin-uhlrich" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+			<li><a href="https://www.facebook.com/uhl.valentin" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+			<li><a href="https://github.com/spileur" target="_blank"><i class="fab fa-github-square"></i></a></li>
+			<li><a href="https://twitter.com/SpileurDev" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+			<li><a href="https://www.instagram.com/uhl.valentin/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+		</ul>
+
+	</footer>
+       
+    <script src="assets/js/menu.js"></script>
 
 </body>
 </html>
