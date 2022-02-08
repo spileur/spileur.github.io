@@ -66,10 +66,13 @@
             /* Place the two user-entered numbers in variables */
             let firstNum  = document.getElementById("firstNum").value;
             let secondNum = document.getElementById("secondNum").value;
+             /* Convert string inputs to numeric variables */
+            firstNum = parseFloat(firstNum);
+            secondNum = parseFloat(secondNum);
             /* Put sum of the two numbers in a new variable */
-
+            let resultdNum = firstNum + secondNum;
             /* Display the result on the web page */
-
+            document.getElementById("resultNum").innerHTML = "<b>"+resultdNum+"<\/b>";
         }
 
         function resetNums() {
