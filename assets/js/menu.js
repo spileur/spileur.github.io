@@ -70,6 +70,7 @@ function swapMenuStyle() {
 // Check initial menu scroll position
 document.addEventListener("DOMContentLoaded", checkMenuScrollPosition);
 
+// Valentin Uhlrich, Javascript Developer
 function checkMenuScrollPosition() {
     var y = window.scrollY;
     if (y === 0) {
