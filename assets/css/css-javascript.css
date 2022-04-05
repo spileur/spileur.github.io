@@ -1,6 +1,6 @@
-.container-menu.menu-desktop { background-color: var(--gray-800) }
-.container-menu.menu-mobile { background-color: var(--gray-800) }
-.container-menu.menu-mobile ul.mobile-display { background-color: var(--gray-800) }
+.container-menu.menu-desktop { background-color: var(--ontrend-800) }
+.container-menu.menu-mobile { background-color: var(--ontrend-800) }
+.container-menu.menu-mobile ul.mobile-display { background-color: var(--ontrend-800) }
 .container-menu a:link { font-weight: 600 !important; color: var(--white-000) } 
 .container-menu a:visited { font-weight: 600 !important; color: var(--gray-200) }
 .container-menu a#btn-cta:link,
@@ -66,3 +66,10 @@ header.hero-block-js .hero-text-container img {
 .theme-js .col-2 a.btn > :nth-child(2) { margin-left: 10px }
 
 
+footer h3 { color: var(--teal-500) }
+footer ul.footer-links li a:focus, 
+footer ul.footer-links li a:hover,
+footer ul.footer-links li a:active 
+footer ul.footer-icons li a:focus, 
+footer ul.footer-icons li a:hover, 
+footer ul.footer-icons li a:active{ color: var(--teal-300); text-decoration-color: var(--teal-300); background: none; }
