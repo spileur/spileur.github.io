@@ -19,17 +19,18 @@
         header.hero-block-js h2 { color: var(--gray-700) }
 
         /* Main Colours */
-        .theme-js { 
-            background-image:#ff0000; background-image:  
+        /* .theme-js { 
+            /* background-image:#ff0000;background-image:  
             radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0, transparent 50%),  
             radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0, transparent 50%),  
             radial-gradient(at 0% 50%, hsla(355,85%,93%,1) 0, transparent 50%),  
             radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0, transparent 50%),  
             radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0, transparent 50%),  
             radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0, transparent 50%),  
-            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%);
-        }
+            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%); 
+        } */
 
+        main { min-height: 50vh} 
         .theme-js .col-2 { background-color: var(--green-100) }
         .theme-js h3 { color: #222 }
         .theme-js p { color: #222 }
@@ -46,36 +47,44 @@
         .theme-js a.btn { background-image: linear-gradient(to right,#e052a0,#f15c41) } 
         .theme-js a.btn:hover { filter: brightness(140%) saturate(140%) } 
 
-        /* ========= ENDS CUSTOM CSS FOR WEB PAGE ======= */
-
-        .theme-js .btn-container { display: block; width: 100% }
-
-        .theme-js { display: flex; align-items: center; flex-direction:column; text-align: center }
-
-        .theme-js h2 { font-size: 28px; text-align: center; margin: 0 auto }
-        .theme-js #value { 
-            font-size: 84px; font-weight: 600;
-            margin: 0 auto;
-            display: block;
-        }
+        /* ===== END PAGE CUSTOM COLOURS ==========*/
         
-        .theme-js .btn {
-            letter-spacing: 2px;
-            display: inline-block;
-            cursor: pointer;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-            text-transform: uppercase;
-            background: transparent;
-            padding: 12px 22px; 
-            margin: 20px;
-            border: solid 2px #000;
-            border-radius: 6px;
+        /* ===== THIS PROJECT ONLY ==========*/
+
+        .theme-js { background-color:#dbf4e4; text-align: center }
+
+        .theme-js h2 { 
+            text-align: center; margin: 0 auto;
+            font-size: 26px;
+            color: #fff; background-color: #000; 
+            display: inline-block; 
+            padding: 20px; line-height: 2; 
         }
 
-        .theme-js .btn:hover {
-            background-color: #fff;
+        #color-display { background-color: green; font-weight: 400; padding: 6px 10px  }
+
+        .theme-js p { width: 100% }
+        #btn-color { 
+            display: block;
+            text-align: center;
+            margin: 20px auto 0 auto;
+            padding: 20px 28px;
+            border: 1px none #000;
+            background-color: blue;
+            transition: all 350ms ease;
+            color: #fff;
+            font-size: 18px;
+            line-height: 1;
+            border-radius: 50px;
         }
-    
+        #btn-color:hover {background-color: darkblue }
+        #btn-color i { margin-right: 10px }
+
+
+        .theme-js:last-child {
+        padding-bottom: 10%;
+        }
+
     </style>
 
 
@@ -104,66 +113,50 @@
     </nav>
         
     
-    <!-- header hero block -->
-    <header class="hero-block hero-block-js">
-        <div class="hero-text-container">
-            <h1>Counter <span>JavaScript Project</span></h1>
-            <h2>An increment and decrement counter that changes the colour of the number displayed on the web page. View my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
-        </div>
-    </header>
+<!-- header hero block -->
+<header class="hero-block hero-block-js">
+    <div class="hero-text-container">
+        <h1>Random Colour Generator <span>JavaScript Project</span></h1>
+        <h2>Uses an array of hexadecimal values to randomly generate a background colour for the web page. View my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
+    </div>
+</header>
 
-    <!-- main content with sections -->
-    <main>
-        
-        <section class="container-flex theme-js">
+<!-- main content with sections -->
+<main>
+    
+    <section class="container-flex theme-js">
 
-            <h2>counter</h2>
-            <span id="value">0</span>
+        <h2>Background Colour: &nbsp;<span id="color-display">#dbf4e4</span></h2>
+        <p>&nbsp;</p>
+        <button class="btn" id="btn-color">
+            <i class="fa-solid fa-paint-roller"></i> Click me
+        </button>
 
-            <div class="button-container">
-                <button class="btn decrease">decrease</button>
-                <button class="btn reset">reset</button>
-                <button class="btn increase">increase</button>
-            </div>
+    </section>
 
-        </section>
+</main>
 
-    </main>
+<script>
 
-    <script>
+const arrHex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+const btnColor = document.querySelector("#btn-color");
+const strColorDisplay = document.querySelector("#color-display");
 
-      // set inital value to zero
-    let count = 0;
-    // select value and buttons
-    const value = document.querySelector("#value");
-    const btns = document.querySelectorAll(".btn");
+btnColor.addEventListener("click", function () {
+    let strHexColor = "#";
+    for (let i = 0; i < 6; i++) {
+        strHexColor = strHexColor + arrHex[getRandomNumber()];
+    }
+    strColorDisplay.textContent = strHexColor;
+    document.querySelector(".theme-js").style.backgroundColor = strHexColor;
+});
 
-    btns.forEach(function (btn) {
-    btn.addEventListener("click", function (e) {
-      const styles = e.currentTarget.classList;
-      if (styles.contains("decrease")) {
-      count--;
-      } else if (styles.contains("increase")) {
-      count++;
-      } else {
-      count = 0;
-      }
-
-      if (count > 0) {
-      value.style.color = "green";
-      }
-      if (count < 0) {
-      value.style.color = "red";
-      }
-      if (count === 0) {
-      value.style.color = "#222";
-      }
-      value.textContent = count;
-    });
-    });
-
-    </script>
-
+// Generate number in range 0 - 15
+function getRandomNumber() {
+    return Math.floor(Math.random() * arrHex.length);
+}
+    
+</script>
     
     <!-- footer -->
 	<footer>
